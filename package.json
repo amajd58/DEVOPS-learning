@@ -1,0 +1,16 @@
+{
+  "name": "devops-learning-project",
+  "version": "1.0.0",
+  "description": "A website to learn DevOps with CI/CD pipeline",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "echo \"Running tests...\" && exit 0",
+    "lint": "echo \"Running linter...\" && exit 0",
+    "build": "echo \"Building project...\" && exit 0",
+    "deploy": "echo \"Deploying...\" && exit 0"
+  },
+  "keywords": ["devops", "cicd", "learning"],
+  "author": "DevOps Student",
+  "license": "MIT"
+}
