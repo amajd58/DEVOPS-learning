@@ -2,14 +2,14 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, staging ]
   pull_request:
     branches: [ main ]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/staging'
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -52,7 +52,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/staging'
     
     steps:
     - name: Checkout code
