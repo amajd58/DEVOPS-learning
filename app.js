@@ -28,5 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update version from package.json (simulated)
     document.getElementById('version').textContent = 'v1.0.0';
     
-    console.log('DevOps Learning App loaded successfully!');
+    console.log('DevOps Learning App loaded success!');
 });
