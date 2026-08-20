@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: devops-learning-app
+  labels:
+    app: devops-learning-app
 spec:
   replicas: 4
   selector:
@@ -15,6 +17,6 @@ spec:
       containers:
         - name: devops-learning-app
           image: 213320332925.dkr.ecr.us-east-1.amazonaws.com/devops-learning-app:eda7a76177d92926a1407ff79f7b830dfe3fd1bf
-          imagePullPolicy: Never
+          imagePullPolicy: Always
           ports:
             - containerPort: 80

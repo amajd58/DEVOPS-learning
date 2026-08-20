@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: devops-learning-service
 spec:
-  type: NodePort
+  #type: NodePort
+  type: LoadBalancer
   selector:
     app: devops-learning-app
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30080
+      #nodePort: 30080
