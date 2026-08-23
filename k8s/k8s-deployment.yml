@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: devops-learning-app
-          image: 213320332925.dkr.ecr.us-east-1.amazonaws.com/devops-learning-app:d44b1bdd23d2ec486a6209f886f1a3e650275dce
+          image: 213320332925.dkr.ecr.us-east-1.amazonaws.com/devops-learning-app:c08b3e0fc2ded80fbcd5d706fb52e0753555dbe7
           imagePullPolicy: Always
           ports:
             - containerPort: 80
